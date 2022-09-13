@@ -37,7 +37,6 @@
     "eslint-plugin-promise": "^6.0.0",
     "ethereum-waffle": "^3.4.0",
     "hardhat-gas-reporter": "^1.0.7",
-    "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.5.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
@@ -75,7 +74,6 @@
     "lint:fix:eslint": "eslint --fix . --ext js,ts",
     "test:forge": "FOUNDRY_PROFILE=reference forge build; FOUNDRY_PROFILE=optimized forge build; FOUNDRY_PROFILE=test forge test -vvv",
     "test:forge:lite": "FOUNDRY_PROFILE=reference forge build; FOUNDRY_PROFILE=lite forge test -vvv",
-    "prepare": "husky install"
   },
   "lint-staged": {
     "*.sol": "prettier --write",
